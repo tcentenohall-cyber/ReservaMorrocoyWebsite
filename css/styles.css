@@ -61,6 +61,21 @@
   .nav-cta:hover{background:var(--sun-soft);}
   .nav-toggle{display:none; background:none; border:none; font-size:24px; cursor:pointer;}
 
+  /* ---------- LANGUAGE TOGGLE ---------- */
+  .lang-toggle{
+    display:flex; align-items:center; gap:6px;
+    font-family:'Space Mono', monospace; font-size:12px; letter-spacing:0.06em;
+  }
+  .lang-btn{
+    background:none; border:none; cursor:pointer;
+    padding:4px 6px; border-radius:6px;
+    color:rgba(34,40,31,0.45); font-family:inherit; font-size:inherit;
+    transition:color .2s ease, background .2s ease;
+  }
+  .lang-btn:hover{color:var(--ink);}
+  .lang-btn.active{color:var(--ember); font-weight:700; background:rgba(217,99,59,0.1);}
+  .lang-sep{color:rgba(34,40,31,0.25); font-size:11px;}
+
   /* ---------- HERO ---------- */
   .hero{
     position:relative;

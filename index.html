@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morrocoy Nature Reserve — Sembrandopaz</title>
+<title data-i18n="meta.title">Morrocoy Nature Reserve — Sembrandopaz</title>
+<meta name="description" content="Morrocoy Nature Reserve protects and restores 406 hectares of tropical dry forest in El Salado, Colombia." data-i18n-content="meta.description">
+<meta property="og:title" content="Morrocoy Nature Reserve — Sembrandopaz" data-i18n-content="meta.og_title">
+<meta property="og:description" content="406 hectares of tropical dry forest, given back to the land." data-i18n-content="meta.og_description">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="/ReservaMorrocoyWebsite/favicon.png">
@@ -14,24 +18,30 @@
 <header>
 <nav>
     <a href="#" class="logo">
-    <img src="images/logos/cream_logo.webp" alt="Morrocoy Nature Reserve">
+    <img src="images/logos/cream_logo.webp" alt="Morrocoy Nature Reserve" data-i18n-alt="nav.logo_alt">
 </a>
 
 <div class="nav-links">
-      <a href="#story">The Reserve</a>
-      <a href="#land">The Land</a>
-      <a href="#restoration">Restoration</a>
-      <a href="#wildlife">Wildlife</a>
-      <a href="#programs">Programs</a>
-      <a href="#visit">Visit</a>
+      <a href="#story" data-i18n="nav.link_reserve">The Reserve</a>
+      <a href="#land" data-i18n="nav.link_land">The Land</a>
+      <a href="#restoration" data-i18n="nav.link_restoration">Restoration</a>
+      <a href="#wildlife" data-i18n="nav.link_wildlife">Wildlife</a>
+      <a href="#programs" data-i18n="nav.link_programs">Programs</a>
+      <a href="#visit" data-i18n="nav.link_visit">Visit</a>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language selector">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button type="button" class="lang-btn" data-lang="es">ES</button>
     </div>
     <a href="https://www.sembrandopaz.org/get-involved/ways-to-give/"
    class="nav-cta"
    target="_blank"
-   rel="noopener noreferrer">
+   rel="noopener noreferrer"
+   data-i18n="nav.give">
     Give
 </a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <button class="nav-toggle" aria-label="Menu" data-i18n-aria-label="nav.toggle_aria">☰</button>
   </nav>
 </header>
 
@@ -39,27 +49,27 @@
   <div class="hero-arc"></div>
   <div class="wrap hero-inner">
     <div class="reserve-title">
-    <span class="reserve-label"><span class="reserve-rule"></span>Reserva Natural de la Sociedad Civil</span>
+    <span class="reserve-label"><span class="reserve-rule"></span><span data-i18n="hero.label">Reserva Natural de la Sociedad Civil</span></span>
     <div class="wordmark">Morrocoy</div>
-    <a href="https://sembrandopaz.org/" target="_blank" rel="noopener noreferrer" class="project-badge">A project of Sembrandopaz</a>
+    <a href="https://sembrandopaz.org/" target="_blank" rel="noopener noreferrer" class="project-badge" data-i18n="hero.badge">A project of Sembrandopaz</a>
 </div>
-<span class="eyebrow" style="color:var(--sun-soft)">El Salado · El Carmen de Bolívar · Colombia</span>
-    <h1>406 hectares of tropical dry forest, <em>given back to the land.</em></h1>
-    <p>Morrocoy Nature Reserve, under the stewardship of <a href="https://sembrandopaz.org/" target="_blank" rel="noopener noreferrer">Sembrandopaz</a>, turns conservation into restorative justice, restoring one of the world's most endangered ecosystems while helping a community heal.</p>
+<span class="eyebrow" style="color:var(--sun-soft)" data-i18n="hero.location">El Salado · El Carmen de Bolívar · Colombia</span>
+    <h1 data-i18n-html="hero.h1">406 hectares of tropical dry forest, <em>given back to the land.</em></h1>
+    <p data-i18n-html="hero.description">Morrocoy Nature Reserve, under the stewardship of <a href="https://sembrandopaz.org/" target="_blank" rel="noopener noreferrer">Sembrandopaz</a>, turns conservation into restorative justice, restoring one of the world's most endangered ecosystems while helping a community heal.</p>
     <div class="hero-actions">
-      <a href="https://www.sembrandopaz.org/get-involved/ways-to-give/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Support the Reserve</a>
-      <a href="#story" class="btn btn-ghost">See the story ↓</a>
+      <a href="https://www.sembrandopaz.org/get-involved/ways-to-give/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="hero.btn_primary">Support the Reserve</a>
+      <a href="#story" class="btn btn-ghost" data-i18n="hero.btn_ghost">See the story ↓</a>
     </div>
   </div>
   <div class="wrap hero-stats-wrap">
     <div class="hero-stats">
-      <div><div class="stat-num">406</div><div class="stat-label">hectares of protected and restored tropical dry forest</div></div>
-      <div><div class="stat-num">9.6</div><div class="stat-label">hectares at San Pedrito, our eco-tourism & education site</div></div>
-      <div><div class="stat-num">2023</div><div class="stat-label">the year we received the reserve</div></div>
+      <div><div class="stat-num">406</div><div class="stat-label" data-i18n="hero.stat1_label">hectares of protected and restored tropical dry forest</div></div>
+      <div><div class="stat-num">9.6</div><div class="stat-label" data-i18n="hero.stat2_label">hectares at San Pedrito, our eco-tourism & education site</div></div>
+      <div><div class="stat-num">2023</div><div class="stat-label" data-i18n="hero.stat3_label">the year we received the reserve</div></div>
       <div class="stat-urgent">
-        <span class="stat-flag">At risk</span>
+        <span class="stat-flag" data-i18n="hero.stat4_flag">At risk</span>
         <div class="stat-num">&lt;8%</div>
-        <div class="stat-label">of Colombia's tropical dry forest remains today</div>
+        <div class="stat-label" data-i18n="hero.stat4_label">of Colombia's tropical dry forest remains today</div>
       </div>
     </div>
   </div>
@@ -72,15 +82,15 @@
     <source src="videos/morrocoy_aerial.MP4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-      <div class="caption">
+      <div class="caption" data-i18n="story.video_caption">
     Morrocoy 1
   </div>
     </div>
-    <span class="eyebrow">The Reserve</span>
-    <h2 style="margin:14px 0 32px; font-size:clamp(26px,3vw,34px); max-width:640px;">Ecology and restorative justice, growing from the same roots</h2>
+    <span class="eyebrow" data-i18n="story.eyebrow">The Reserve</span>
+    <h2 style="margin:14px 0 32px; font-size:clamp(26px,3vw,34px); max-width:640px;" data-i18n="story.h2">Ecology and restorative justice, growing from the same roots</h2>
     <div class="story-copy">
-      <p>In 2023, the Crecer en Paz Foundation gifted 406 hectares of tropical dry forest to Sembrandopaz, which now stewards the land as Morrocoy Nature Reserve. It sits in El Salado, El Carmen de Bolívar, a community still healing from years of conflict.</p>
-      <p>Today the reserve is dedicated to conserving and restoring Tropical Dry Forest, one of the most endangered ecosystems on Earth, while giving the surrounding community a stake in what grows back.</p>
+      <p data-i18n="story.p1">In 2023, the Crecer en Paz Foundation gifted 406 hectares of tropical dry forest to Sembrandopaz, which now stewards the land as Morrocoy Nature Reserve. It sits in El Salado, El Carmen de Bolívar, a community still healing from years of conflict.</p>
+      <p data-i18n="story.p2">Today the reserve is dedicated to conserving and restoring Tropical Dry Forest, one of the most endangered ecosystems on Earth, while giving the surrounding community a stake in what grows back.</p>
     </div>
   </div>
 </section>
@@ -91,10 +101,10 @@
 
     <!-- Left column -->
     <div class="land-text">
-        <span class="eyebrow">The Land</span>
-        <h2>One reserve, <em>fragmented</em></h2>
+        <span class="eyebrow" data-i18n="land.eyebrow">The Land</span>
+        <h2 data-i18n-html="land.h2">One reserve, <em>fragmented</em></h2>
 
-        <p>
+        <p data-i18n="land.p">
             The 406 hectares of Morrocoy aren't one unbroken block.
             The reserve is made up of two adjoining areas, Morrocoy 1
             and Morrocoy 2, mapped and monitored across El Salado,
@@ -104,7 +114,7 @@
 
     <!-- Right column -->
     <div class="map-frame">
-        <span class="tag">Live map · Morrocoy 1 &amp; 2</span>
+        <span class="tag" data-i18n="land.map_tag">Live map · Morrocoy 1 &amp; 2</span>
         <iframe
             src="https://www.google.com/maps/d/embed?mid=1yt9AgLiEyLYcNHQgIqP8ZNF7288WUbU&ehbc=2E312F&noprof=1"
             loading="lazy"
@@ -119,45 +129,45 @@
 <section id="restoration" class="restoration">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">What restoration looks like</span>
-      <h2>From open scar to closed canopy</h2>
-      <p>Both plots were left exposed by deforestation long before Sembrandopaz began restoring them. This is the starting point every hectare of today's forest had to grow back from.</p>
+      <span class="eyebrow" data-i18n="restoration.eyebrow">What restoration looks like</span>
+      <h2 data-i18n="restoration.h2">From open scar to closed canopy</h2>
+      <p data-i18n="restoration.p">Both plots were left exposed by deforestation long before Sembrandopaz began restoring them. This is the starting point every hectare of today's forest had to grow back from.</p>
     </div>
    <div class="compare-grid reveal">
   <div class="compare-card">
-    <h3>Morrocoy 1</h3>
+    <h3 data-i18n="restoration.card1_title">Morrocoy 1</h3>
 
     <div class="compare-pair">
       <div class="compare-frame">
         <span class="badge">2011</span>
-        <img src="images/restoration/morrocoy1_before.webp" alt="Morrocoy 1 in 2011">
+        <img src="images/restoration/morrocoy1_before.webp" alt="Morrocoy 1 in 2011" data-i18n-alt="restoration.img1_alt">
       </div>
 
       <div class="compare-frame">
-        <span class="badge">Today</span>
-        <img src="images/restoration/morrocoy1_after.webp" alt="Morrocoy 1, closed canopy forest, present day">
+        <span class="badge" data-i18n="restoration.badge_today">Today</span>
+        <img src="images/restoration/morrocoy1_after.webp" alt="Morrocoy 1, closed canopy forest, present day" data-i18n-alt="restoration.img2_alt">
       </div>
     </div>
   </div>
 
   <div class="compare-card">
-    <h3>Morrocoy 2</h3>
+    <h3 data-i18n="restoration.card2_title">Morrocoy 2</h3>
 
     <div class="compare-pair">
       <div class="compare-frame">
         <span class="badge">2011</span>
-        <img src="images/restoration/morrocoy2_before.webp" alt="Morrocoy 2 in 2011">
+        <img src="images/restoration/morrocoy2_before.webp" alt="Morrocoy 2 in 2011" data-i18n-alt="restoration.img3_alt">
       </div>
 
       <div class="compare-frame">
-        <span class="badge">Today</span>
-        <img src="images/restoration/morrocoy2_after.webp" alt="Morrocoy 2, present day">
+        <span class="badge" data-i18n="restoration.badge_today">Today</span>
+        <img src="images/restoration/morrocoy2_after.webp" alt="Morrocoy 2, present day" data-i18n-alt="restoration.img4_alt">
       </div>
     </div>
   </div>
 </div>
 
-<p class="restoration-note">
+<p class="restoration-note" data-i18n="restoration.note">
   Restoring land like this isn't instant. Closed-canopy tropical dry forest takes years of active planting, monitoring, and protection to return. Every gift to Morrocoy funds that work.
 </p>
 </section>
@@ -165,30 +175,30 @@
 <section id="wildlife" class="wildlife">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Who lives here</span>
-      <h2>Home to thousands of species, many vulnerable or endangered</h2>
-      <p>The Morrocoy reserve is home to endangered wildlife. Our wildlife camaras and scientific expeditions monitor them.</p>
+      <span class="eyebrow" data-i18n="wildlife.eyebrow">Who lives here</span>
+      <h2 data-i18n="wildlife.h2">Home to thousands of species, many vulnerable or endangered</h2>
+      <p data-i18n="wildlife.p">The Morrocoy reserve is home to endangered wildlife. Our wildlife camaras and scientific expeditions monitor them.</p>
     </div>
     <div class="wildlife-grid reveal">
       <div class="wcard">
-        <h3>Cottontop Tamarin</h3>
-        <p>One of the world's most endangered primates, native to this stretch of forest.</p>
+        <h3 data-i18n="wildlife.card1_title">Cottontop Tamarin</h3>
+        <p data-i18n="wildlife.card1_p">One of the world's most endangered primates, native to this stretch of forest.</p>
       </div>
       <div class="wcard">
-        <h3>Keel-billed Toucan</h3>
-        <p>A signature sighting for visitors exploring San Pedrito's trails.</p>
+        <h3 data-i18n="wildlife.card2_title">Keel-billed Toucan</h3>
+        <p data-i18n="wildlife.card2_p">A signature sighting for visitors exploring San Pedrito's trails.</p>
       </div>
       <div class="wcard">
-        <h3>Thousands of plant species</h3>
-        <p>The backbone of a dry-forest ecosystem under active restoration.</p>
+        <h3 data-i18n="wildlife.card3_title">Thousands of plant species</h3>
+        <p data-i18n="wildlife.card3_p">The backbone of a dry-forest ecosystem under active restoration.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="camera-gallery">
-    <span class="eyebrow">Camera Traps</span>
-    <h2>Wildlife captured by our camera traps</h2>
+    <span class="eyebrow" data-i18n="gallery.eyebrow">Camera Traps</span>
+    <h2 data-i18n="gallery.h2">Wildlife captured by our camera traps</h2>
 
     <div class="carousel">
 
@@ -196,30 +206,30 @@
 
         <div class="carousel-track">
 			
-			<img loading="lazy" src="images/camara_traps/capuchin_monkey.webp" alt="White-faced Capuchin">
-            <img loading="lazy" src="images/camara_traps/titi_monkey.webp" alt="Titi Monkey">
+			<img loading="lazy" src="images/camara_traps/capuchin_monkey.webp" alt="White-faced Capuchin" data-i18n-alt="gallery.alt_capuchin">
+            <img loading="lazy" src="images/camara_traps/titi_monkey.webp" alt="Titi Monkey" data-i18n-alt="gallery.alt_titi">
 			
-			<img loading="lazy" src="images/camara_traps/Tayra.webp" alt="Tayra">
-			<img loading="lazy" src="images/camara_traps/tigrillo.webp" alt="ocelot">
-			<img loading="lazy" src="images/camara_traps/capped_heron.webp" alt="Capped Heron">     
+			<img loading="lazy" src="images/camara_traps/Tayra.webp" alt="Tayra" data-i18n-alt="gallery.alt_tayra">
+			<img loading="lazy" src="images/camara_traps/tigrillo.webp" alt="ocelot" data-i18n-alt="gallery.alt_ocelot">
+			<img loading="lazy" src="images/camara_traps/capped_heron.webp" alt="Capped Heron" data-i18n-alt="gallery.alt_heron">     
 			
-            <img loading="lazy" src="images/camara_traps/oso_palmero.webp" alt="Northern Tamandua">
-			<img loading="lazy" src="images/camara_traps/armadillo.webp" alt="Armadillo">
-            <img loading="lazy" src="images/camara_traps/roadside_hawk.webp" alt="Roadside Hawk">
+            <img loading="lazy" src="images/camara_traps/oso_palmero.webp" alt="Northern Tamandua" data-i18n-alt="gallery.alt_tamandua">
+			<img loading="lazy" src="images/camara_traps/armadillo.webp" alt="Armadillo" data-i18n-alt="gallery.alt_armadillo">
+            <img loading="lazy" src="images/camara_traps/roadside_hawk.webp" alt="Roadside Hawk" data-i18n-alt="gallery.alt_hawk">
 
-            <img loading="lazy" src="images/camara_traps/skunk.webp" alt="Skunk">
+            <img loading="lazy" src="images/camara_traps/skunk.webp" alt="Skunk" data-i18n-alt="gallery.alt_skunk">
             
-			<img loading="lazy" src="images/camara_traps/anteater.webp" alt="Giant Anteater">
+			<img loading="lazy" src="images/camara_traps/anteater.webp" alt="Giant Anteater" data-i18n-alt="gallery.alt_anteater">
        
-            <img loading="lazy" src="images/camara_traps/tigrillo_night.webp" alt="ocelot at Night">
+            <img loading="lazy" src="images/camara_traps/tigrillo_night.webp" alt="ocelot at Night" data-i18n-alt="gallery.alt_ocelot_night">
 
             
 
-            <img loading="lazy" src="images/camara_traps/toucan.webp" alt="Toucan">
+            <img loading="lazy" src="images/camara_traps/toucan.webp" alt="Toucan" data-i18n-alt="gallery.alt_toucan">
 
-            <img loading="lazy" src="images/camara_traps/wildboar.webp" alt="Wild Boar">
+            <img loading="lazy" src="images/camara_traps/wildboar.webp" alt="Wild Boar" data-i18n-alt="gallery.alt_boar">
 
-            <img loading="lazy" src="images/camara_traps/yaguarundi.webp" alt="Jaguarundi">
+            <img loading="lazy" src="images/camara_traps/yaguarundi.webp" alt="Jaguarundi" data-i18n-alt="gallery.alt_jaguarundi">
 
         </div>
 
@@ -230,20 +240,20 @@
 <section id="programs">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Programs</span>
-      <h2>Teaching the next generation to protect what's theirs</h2>
-      <p>Education is at the center of Morrocoy — not an add-on to conservation, but the reason it lasts.</p>
+      <span class="eyebrow" data-i18n="programs.eyebrow">Programs</span>
+      <h2 data-i18n="programs.h2">Teaching the next generation to protect what's theirs</h2>
+      <p data-i18n="programs.p">Education is at the center of Morrocoy — not an add-on to conservation, but the reason it lasts.</p>
     </div>
     <div class="programs-grid reveal">
       <div class="pcard">
-        <span class="eyebrow">School in the Forest</span>
-        <h3>Classrooms with no walls</h3>
-        <p>Children learn ecology, biology, and stewardship directly in the reserve — turning the forest itself into the curriculum.</p>
+        <span class="eyebrow" data-i18n="programs.card1_eyebrow">School in the Forest</span>
+        <h3 data-i18n="programs.card1_h3">Classrooms with no walls</h3>
+        <p data-i18n="programs.card1_p">Children learn ecology, biology, and stewardship directly in the reserve — turning the forest itself into the curriculum.</p>
       </div>
       <div class="pcard">
-        <span class="eyebrow">Ecological Youth Protectors</span>
-        <h3>Young people, leading</h3>
-        <p>A youth program that builds leadership and care — for the forest, for themselves, and for their communities.</p>
+        <span class="eyebrow" data-i18n="programs.card2_eyebrow">Ecological Youth Protectors</span>
+        <h3 data-i18n="programs.card2_h3">Young people, leading</h3>
+        <p data-i18n="programs.card2_p">A youth program that builds leadership and care — for the forest, for themselves, and for their communities.</p>
       </div>
     </div>
   </div>
@@ -258,24 +268,25 @@
     Your browser does not support the video tag.
   </video>
 
-  <div class="caption">
+  <div class="caption" data-i18n="visit.video_caption">
     San Pedrito Trail
   </div>
 </div>
       <div class="visit-copy">
-        <span class="eyebrow">Visit</span>
-        <h2 style="margin-top:12px; font-size:clamp(26px,3vw,34px);">Come see the forest for yourself</h2>
-        <p>San Pedrito is the reserve's 9.6 hectare visitors center with a focus on eco-tourism and environmental education. Trails, bird watching, and a base for the School in the Forest and Vigias Ecologicos programs, tucked into the tree line above El Salado.</p>
-        <a href="mailto:lillian.hall@sembrandopaz.org?subject=Visit%20Request%20%E2%80%94%20Morrocoy%20Nature%20Reserve" class="btn" style="background:var(--canopy); color:var(--paper); display:inline-block;">Plan a visit</a>
+        <span class="eyebrow" data-i18n="visit.eyebrow">Visit</span>
+        <h2 style="margin-top:12px; font-size:clamp(26px,3vw,34px);" data-i18n="visit.h2">Come see the forest for yourself</h2>
+        <p data-i18n="visit.p">San Pedrito is the reserve's 9.6 hectare visitors center with a focus on eco-tourism and environmental education. Trails, bird watching, and a base for the School in the Forest and Vigias Ecologicos programs, tucked into the tree line above El Salado.</p>
+        <a href="mailto:lillian.hall@sembrandopaz.org?subject=Visit%20Request%20%E2%80%94%20Morrocoy%20Nature%20Reserve" class="btn" style="background:var(--canopy); color:var(--paper); display:inline-block;" data-i18n="visit.btn" data-i18n-mailto="visit.mailto_subject" data-mailto-base="mailto:lillian.hall@sembrandopaz.org">Plan a visit</a>
       </div>
     </div>
 	<div class="give reveal" id="give">
-		<h2>Help us restore the Tropical Dry Forest, hectare by hectare.</h2>
+		<h2 data-i18n="visit.give_h2">Help us restore the Tropical Dry Forest, hectare by hectare.</h2>
 
 		<a href="https://www.sembrandopaz.org/get-involved/ways-to-give/"
 			class="btn btn-primary"
 			target="_blank"
-			rel="noopener noreferrer">
+			rel="noopener noreferrer"
+			data-i18n="visit.give_btn">
 			Give to Morrocoy
 		</a>
 </div>
@@ -291,49 +302,51 @@
 
                 <div>
 
-                    <h4>Organization</h4>
+                    <h4 data-i18n="footer.org_heading">Organization</h4>
 
-                    <p>
+                    <p data-i18n="footer.org_name">
                         Asociación Sembrando Semillas de Paz – Sembrandopaz
                     </p>
 
-                    <p>
+                    <p data-i18n-html="footer.org_address">
                         Cl. 32 #17–194<br>
                         Avenida Alfonso López<br>
                         Sincelejo, Sucre, Colombia
                     </p>
 
-                    <p>
+                    <p data-i18n-html="footer.nit_html">
                         <strong>NIT:</strong> 900035060-8
                     </p>
 
                 </div>
 
 			   <div>
-                    <h4>Explore</h4>
+                    <h4 data-i18n="footer.explore_heading">Explore</h4>
 
-                    <a href="#story">The Reserve</a>
-                    <a href="#wildlife">Wildlife</a>
-                    <a href="#programs">Programs</a>
+                    <a href="#story" data-i18n="footer.explore_reserve">The Reserve</a>
+                    <a href="#wildlife" data-i18n="footer.explore_wildlife">Wildlife</a>
+                    <a href="#programs" data-i18n="footer.explore_programs">Programs</a>
                 </div>
 
                 <!-- Connect -->
                 <div>
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footer.connect_heading">Connect</h4>
 
                     <a href="https://www.instagram.com/reserva_morrocoy"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       data-i18n="footer.connect_instagram">
                         Instagram
                     </a>
 
                     <a href="https://www.facebook.com/p/Sembrandopaz-100064683217647/"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       data-i18n="footer.connect_facebook">
                         Facebook
                     </a>
 
-                    <a href="mailto:info@sembrandopaz.org">
+                    <a href="mailto:info@sembrandopaz.org" data-i18n="footer.connect_contact">
                         Contact
                     </a>
                 </div>
@@ -343,13 +356,14 @@
         </div>
 
         <div class="footer-bottom">
-            <span>© 2026 Morrocoy Nature Reserve — a Sembrandopaz project</span>
-            <span>El Salado · El Carmen de Bolívar, Colombia</span>
+            <span data-i18n="footer.copyright">© 2026 Morrocoy Nature Reserve — a Sembrandopaz project</span>
+            <span data-i18n="footer.location">El Salado · El Carmen de Bolívar, Colombia</span>
         </div>
 
     </div>
 
 </footer>
+<script src="js/translations.js"></script>
 <script src="js/script.js" defer></script>
 </body>
 </html>
