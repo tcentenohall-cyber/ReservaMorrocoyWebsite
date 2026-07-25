@@ -25,7 +25,7 @@
 <header>
 <nav>
     <a href="#" class="logo">
-    <img src="images/logos/cream_logo.webp" alt="Morrocoy Nature Reserve" data-i18n-alt="nav.logo_alt">
+    <img src="images/logos/cream_logo.webp" alt="Morrocoy Nature Reserve" data-i18n-alt="nav.logo_alt" width="180" height="180">
 </a>
 
 <div class="nav-links">
@@ -85,8 +85,8 @@
 <section id="story">
   <div class="wrap reveal">
     <div class="story-visual">
-      <video autoplay muted loop playsinline>
-    <source src="videos/morrocoy_aerial.mp4" type="video/mp4">
+      <video class="lazy-video" muted loop playsinline preload="none">
+    <source data-src="videos/morrocoy_aerial.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
       <div class="caption" data-i18n="story.video_caption">
@@ -299,8 +299,8 @@
   <div class="wrap">
     <div class="visit-split reveal">
      <div class="story-visual">
-  <video autoplay muted loop playsinline>
-    <source src="videos/pond_walk.mp4" type="video/mp4">
+  <video class="lazy-video" muted loop playsinline preload="none">
+    <source data-src="videos/pond_walk.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 

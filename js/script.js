@@ -30,6 +30,30 @@ if (track && prevBtn) {
     });
 }
 
+/* ---------- Lazy-load & play/pause background videos ---------- */
+const lazyVideos = document.querySelectorAll(".lazy-video");
+if (lazyVideos.length) {
+    const videoIo = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                if (!video.dataset.loaded) {
+                    const source = video.querySelector("source[data-src]");
+                    if (source) {
+                        source.src = source.getAttribute("data-src");
+                        video.load();
+                    }
+                    video.dataset.loaded = "true";
+                }
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.25 });
+    lazyVideos.forEach(v => videoIo.observe(v));
+}
+
 /* ---------- Click-to-load map (defers heavy third-party embed) ---------- */
 const mapFrame = document.getElementById("mapFrame");
 const mapBtn = document.getElementById("mapLoadBtn");
