@@ -9,9 +9,16 @@
 <meta property="og:description" content="406 hectares of tropical dry forest, given back to the land." data-i18n-content="meta.og_description">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="/ReservaMorrocoyWebsite/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=Space+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=Space+Mono&display=swap" media="print" onload="this.media='all'">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preload" as="style" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=Space+Mono&display=swap">
 <link rel="stylesheet" href="css/styles.css">
+</noscript>
 </head>
 <body>
 
@@ -41,7 +48,7 @@
    data-i18n="nav.give">
     Give
 </a>
-    <button class="nav-toggle" aria-label="Menu" data-i18n-aria-label="nav.toggle_aria">☰</button>
+    <button class="nav-toggle" aria-label="Menu" data-i18n-aria-label="nav.toggle_aria" aria-expanded="false">☰</button>
   </nav>
 </header>
 
@@ -79,7 +86,7 @@
   <div class="wrap reveal">
     <div class="story-visual">
       <video autoplay muted loop playsinline>
-    <source src="videos/morrocoy_aerial.MP4" type="video/mp4">
+    <source src="videos/morrocoy_aerial.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
       <div class="caption" data-i18n="story.video_caption">
@@ -117,6 +124,7 @@
         <span class="tag" data-i18n="land.map_tag">Live map · Morrocoy 1 &amp; 2</span>
         <iframe
             src="https://www.google.com/maps/d/embed?mid=1yt9AgLiEyLYcNHQgIqP8ZNF7288WUbU&ehbc=2E312F&noprof=1"
+            title="Map of Morrocoy 1 and Morrocoy 2 reserve boundaries"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade">
@@ -202,38 +210,70 @@
 
     <div class="carousel">
 
-        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn prev" aria-label="Previous photo" data-i18n-aria-label="gallery.prev_aria">&#10094;</button>
 
         <div class="carousel-track">
-			
-			<img loading="lazy" src="images/camara_traps/capuchin_monkey.webp" alt="White-faced Capuchin" data-i18n-alt="gallery.alt_capuchin">
-            <img loading="lazy" src="images/camara_traps/titi_monkey.webp" alt="Titi Monkey" data-i18n-alt="gallery.alt_titi">
-			
-			<img loading="lazy" src="images/camara_traps/Tayra.webp" alt="Tayra" data-i18n-alt="gallery.alt_tayra">
-			<img loading="lazy" src="images/camara_traps/tigrillo.webp" alt="ocelot" data-i18n-alt="gallery.alt_ocelot">
-			<img loading="lazy" src="images/camara_traps/capped_heron.webp" alt="Capped Heron" data-i18n-alt="gallery.alt_heron">     
-			
-            <img loading="lazy" src="images/camara_traps/oso_palmero.webp" alt="Northern Tamandua" data-i18n-alt="gallery.alt_tamandua">
-			<img loading="lazy" src="images/camara_traps/armadillo.webp" alt="Armadillo" data-i18n-alt="gallery.alt_armadillo">
-            <img loading="lazy" src="images/camara_traps/roadside_hawk.webp" alt="Roadside Hawk" data-i18n-alt="gallery.alt_hawk">
 
-            <img loading="lazy" src="images/camara_traps/skunk.webp" alt="Skunk" data-i18n-alt="gallery.alt_skunk">
-            
-			<img loading="lazy" src="images/camara_traps/anteater.webp" alt="Giant Anteater" data-i18n-alt="gallery.alt_anteater">
-       
-            <img loading="lazy" src="images/camara_traps/tigrillo_night.webp" alt="ocelot at Night" data-i18n-alt="gallery.alt_ocelot_night">
-
-            
-
-            <img loading="lazy" src="images/camara_traps/toucan.webp" alt="Toucan" data-i18n-alt="gallery.alt_toucan">
-
-            <img loading="lazy" src="images/camara_traps/wildboar.webp" alt="Wild Boar" data-i18n-alt="gallery.alt_boar">
-
-            <img loading="lazy" src="images/camara_traps/yaguarundi.webp" alt="Jaguarundi" data-i18n-alt="gallery.alt_jaguarundi">
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/capuchin_monkey.webp" alt="White-faced Capuchin" data-i18n-alt="gallery.alt_capuchin">
+                <span class="caption" data-i18n="gallery.alt_capuchin">White-faced Capuchin</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/titi_monkey.webp" alt="Titi Monkey" data-i18n-alt="gallery.alt_titi">
+                <span class="caption" data-i18n="gallery.alt_titi">Titi Monkey</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/tayra.webp" alt="Tayra" data-i18n-alt="gallery.alt_tayra">
+                <span class="caption" data-i18n="gallery.alt_tayra">Tayra</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/ocelot.webp" alt="Ocelot" data-i18n-alt="gallery.alt_ocelot">
+                <span class="caption" data-i18n="gallery.alt_ocelot">Ocelot</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/capped_heron.webp" alt="Capped Heron" data-i18n-alt="gallery.alt_heron">
+                <span class="caption" data-i18n="gallery.alt_heron">Capped Heron</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/giant_anteater.webp" alt="Giant Anteater" data-i18n-alt="gallery.alt_anteater">
+                <span class="caption" data-i18n="gallery.alt_anteater">Anteater</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/armadillo.webp" alt="Armadillo" data-i18n-alt="gallery.alt_armadillo">
+                <span class="caption" data-i18n="gallery.alt_armadillo">Armadillo</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/roadside_hawk.webp" alt="Roadside Hawk" data-i18n-alt="gallery.alt_hawk">
+                <span class="caption" data-i18n="gallery.alt_hawk">Roadside Hawk</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/skunk.webp" alt="Skunk" data-i18n-alt="gallery.alt_skunk">
+                <span class="caption" data-i18n="gallery.alt_skunk">Skunk</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/mexican_anteater.webp" alt="Mexican Anteater" data-i18n-alt="gallery.alt_mexican_anteater">
+                <span class="caption" data-i18n="gallery.alt_mexican_anteater">Mexican Anteater</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/ocelot_night.webp" alt="Ocelot at Night" data-i18n-alt="gallery.alt_ocelot_night">
+                <span class="caption" data-i18n="gallery.alt_ocelot_night">Ocelot at Night</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/toucan.webp" alt="Toucan" data-i18n-alt="gallery.alt_toucan">
+                <span class="caption" data-i18n="gallery.alt_toucan">Toucan</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/peccary.webp" alt="Peccary" data-i18n-alt="gallery.alt_peccary">
+                <span class="caption" data-i18n="gallery.alt_peccary">Peccary</span>
+            </div>
+            <div class="carousel-frame">
+                <img loading="lazy" src="images/camara_traps/yaguarundi.webp" alt="Jaguarundi" data-i18n-alt="gallery.alt_jaguarundi">
+                <span class="caption" data-i18n="gallery.alt_jaguarundi">Jaguarundi</span>
+            </div>
 
         </div>
 
-        <button class="carousel-btn next">&#10095;</button>
+        <button class="carousel-btn next" aria-label="Next photo" data-i18n-aria-label="gallery.next_aria">&#10095;</button>
 
     </div>
 </section>
@@ -264,7 +304,7 @@
     <div class="visit-split reveal">
      <div class="story-visual">
   <video autoplay muted loop playsinline>
-    <source src="videos/pond_walk.MP4" type="video/mp4">
+    <source src="videos/pond_walk.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -302,7 +342,7 @@
 
                 <div>
 
-                    <h4 data-i18n="footer.org_heading">Organization</h4>
+                    <h3 data-i18n="footer.org_heading">Organization</h3>
 
                     <p data-i18n="footer.org_name">
                         Asociación Sembrando Semillas de Paz – Sembrandopaz
@@ -321,16 +361,19 @@
                 </div>
 
 			   <div>
-                    <h4 data-i18n="footer.explore_heading">Explore</h4>
+                    <h3 data-i18n="footer.explore_heading">Explore</h3>
 
                     <a href="#story" data-i18n="footer.explore_reserve">The Reserve</a>
+                    <a href="#land" data-i18n="footer.explore_land">The Land</a>
+                    <a href="#restoration" data-i18n="footer.explore_restoration">Restoration</a>
                     <a href="#wildlife" data-i18n="footer.explore_wildlife">Wildlife</a>
                     <a href="#programs" data-i18n="footer.explore_programs">Programs</a>
+                    <a href="#visit" data-i18n="footer.explore_visit">Visit</a>
                 </div>
 
                 <!-- Connect -->
                 <div>
-                    <h4 data-i18n="footer.connect_heading">Connect</h4>
+                    <h3 data-i18n="footer.connect_heading">Connect</h3>
 
                     <a href="https://www.instagram.com/reserva_morrocoy"
                        target="_blank"

@@ -3,9 +3,11 @@
     --canopy-deep:#122820;
     --sun:#E8A93B;
     --sun-soft:#F3D590;
+    --gold-hover:#E8C878;
     --paper:#F7F3E9;
     --ink:#22281F;
     --ember:#D9633B;
+    --ember-dark:#A34A2C;
     --line: rgba(34,40,31,0.12);
     --max: 1180px;
   }
@@ -27,7 +29,7 @@
     font-size:12px;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    color:var(--ember);
+    color:var(--ember-dark);
   }
 
   /* ---------- NAV ---------- */
@@ -69,11 +71,11 @@
   .lang-btn{
     background:none; border:none; cursor:pointer;
     padding:4px 6px; border-radius:6px;
-    color:rgba(34,40,31,0.45); font-family:inherit; font-size:inherit;
+    color:rgba(34,40,31,0.7); font-family:inherit; font-size:inherit;
     transition:color .2s ease, background .2s ease;
   }
   .lang-btn:hover{color:var(--ink);}
-  .lang-btn.active{color:var(--ember); font-weight:700; background:rgba(217,99,59,0.1);}
+  .lang-btn.active{color:var(--ember-dark); font-weight:700; background:rgba(217,99,59,0.1);}
   .lang-sep{color:rgba(34,40,31,0.25); font-size:11px;}
 
   /* ---------- HERO ---------- */
@@ -180,29 +182,10 @@
 
   /* ---------- VISIT (San Pedrito) ---------- */
   .visit-split{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; margin-bottom:80px;}
-  .visit-photo{
-    aspect-ratio:4/3; border-radius:18px; overflow:hidden; position:relative;
-  }
-  .visit-photo img{width:100%; height:100%; object-fit:cover; display:block;}
-  .visit-photo .tag{
-    position:absolute; top:20px; left:20px;
-    background:rgba(18,40,32,0.75); backdrop-filter:blur(4px);
-    color:var(--sun-soft); font-family:'Space Mono', monospace; font-size:12px;
-    padding:6px 12px; border-radius:100px;
-  }
   .visit-copy p{color:rgba(34,40,31,0.75); font-size:16.5px; margin:16px 0 24px;}
   
 
   /* ---------- LAND / MAP ---------- */
-  .land-layout{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start;}
-  .land-copy p{color:rgba(34,40,31,0.75); font-size:16.5px; margin:16px 0 28px;}
-  .plot-legend{display:flex; flex-direction:column; gap:14px;}
-  .plot-item{display:flex; align-items:center; gap:12px; font-size:15px;}
-  .plot-dot{width:12px; height:12px; border-radius:50%; flex-shrink:0;}
-  .plot-dot.p1{background:var(--sun);}
-  .plot-dot.p2{background:var(--ember);}
-  .plot-item strong{font-weight:600;}
-  .plot-item span{color:rgba(34,40,31,0.6); font-size:14px;}
   .map-frame{
     aspect-ratio:4/3.4; border-radius:18px; overflow:hidden;
     border:1px solid var(--line);
@@ -228,14 +211,6 @@
     font-family:'Space Mono', monospace; font-size:11px; letter-spacing:0.04em;
     padding:5px 10px; border-radius:100px;
     background:rgba(18,40,32,0.8); color:var(--paper);
-  }
-  .compare-frame.after{
-    display:flex; align-items:center; justify-content:center;
-    border:1px dashed rgba(247,243,233,0.25);
-  }
-  .compare-frame.after .placeholder-txt{
-    font-family:'Space Mono', monospace; font-size:12px;
-    color:rgba(247,243,233,0.4); text-align:center; padding:20px;
   }
   .restoration-note{
     margin-top:48px; padding-top:32px; border-top:1px solid rgba(247,243,233,0.14);
@@ -275,13 +250,51 @@
 
   /* ---------- FOOTER ---------- */
   footer{background:var(--canopy-deep); color:rgba(247,243,233,0.6); padding:56px 0 32px;}
-  .footer-top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(247,243,233,0.12);}
+  .footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:4rem;
+    padding: 0;
+    border-bottom:1px solid rgba(247,243,233,.12);
+  }
   .footer-top .logo{color:var(--paper);}
-  .footer-links{display:flex; gap:56px; flex-wrap:wrap;}
-  .footer-links h4{font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(247,243,233,0.4); margin-bottom:14px;}
-  .footer-links a{display:block; font-size:14.5px; margin-bottom:10px; color:rgba(247,243,233,0.75);}
-  .footer-links a:hover{color:var(--sun);}
-  .footer-bottom{padding-top:24px; font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  .footer-links{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(180px,1fr));
+    gap:3rem;
+  }
+  .footer-links h3{
+    margin-bottom:1rem;
+    color:#F7F3E9;
+    font-size:1rem;
+  }
+  .footer-links a{
+    display:block;
+    margin-bottom:.75rem;
+    color:rgba(247,243,233,.75);
+    text-decoration:none;
+    transition:.25s;
+  }
+  .footer-links a:hover{
+    color:var(--gold-hover);
+  }
+  .footer-links p{
+    margin:0 0 1rem;
+    color:rgba(247,243,233,.75);
+    line-height:1.6;
+    font-size:.92rem;
+  }
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:1.5rem 0;
+    color:rgba(247,243,233,.6);
+    font-size:.9rem;
+  }
 
   /* ---------- responsive ---------- */
   
@@ -289,8 +302,9 @@
   
 
   /* reveal on scroll */
-  .reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
-  .reveal.in{opacity:1; transform:none;}
+  .reveal{transition:opacity .6s ease, transform .6s ease;}
+  .reveal.reveal-armed{opacity:0; transform:translateY(16px);}
+  .reveal.reveal-armed.in{opacity:1; transform:none;}
   
 
   /* ---------- HEADER LOGO ---------- */
@@ -479,19 +493,34 @@ section.camera-gallery{
     display:none;
 }
 
-.carousel img{
+.carousel-frame{
     flex:0 0 auto;
     width:360px;
     height:240px;
-    object-fit:cover;
+    position:relative;
+    overflow:hidden;
     border-radius:12px;
     cursor:pointer;
     transition:.35s;
     box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
 
-.carousel img:hover{
+.carousel-frame:hover{
     transform:scale(1.04);
+}
+
+.carousel-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.carousel-frame .caption{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:14px 16px;
+    background:linear-gradient(to top, rgba(18,40,32,0.75), transparent);
+    font-family:'Space Mono', monospace; color:var(--sun-soft); font-size:19.5px;
 }
 
 .carousel-btn{
@@ -522,80 +551,26 @@ section.camera-gallery{
     right:0;
 }
 
-/* ---------- FOOTER (overrides) ---------- */
-.footer-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:4rem;
-    padding: 0;
-    border-bottom:1px solid rgba(247,243,233,.12);
-}
-
-.footer-links{
-    display:grid;
-    grid-template-columns:repeat(3, minmax(180px,1fr));
-    gap:3rem;
-}
-
-.footer-links h4{
-    margin-bottom:1rem;
-    color:#F7F3E9;
-    font-size:1rem;
-}
-
-.footer-links a{
-    display:block;
-    margin-bottom:.75rem;
-    color:rgba(247,243,233,.75);
-    text-decoration:none;
-    transition:.25s;
-}
-
-.footer-links a:hover{
-    color:#E8C878;
-}
-
-.footer-links p{
-    margin:0 0 1rem;
-    color:rgba(247,243,233,.75);
-    line-height:1.6;
-    font-size:.92rem;
-}
-
-.footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:1rem;
-    padding:1.5rem 0;
-    color:rgba(247,243,233,.6);
-    font-size:.9rem;
-}
-
 
 /* ==================== MEDIA QUERIES ==================== */
 
 @media (max-width:820px){
     .story-visual{aspect-ratio:4/3;}
     .story-copy{grid-template-columns:1fr;}
-  }
-
-@media (max-width:820px){
     .visit-split{grid-template-columns:1fr;}
-  }
-
-@media (max-width:820px){
-    .land-layout{grid-template-columns:1fr;}
-  }
-
-@media (max-width:820px){
     .compare-grid{grid-template-columns:1fr;}
-  }
-
-@media (max-width:820px){
     .nav-links{display:none;}
+    .nav-links.mobile-open{
+      display:flex;
+      flex-direction:column;
+      position:absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background:var(--paper);
+      padding:20px 32px;
+      border-bottom:1px solid var(--line);
+    }
     .nav-toggle{display:block;}
     .story{grid-template-columns:1fr;}
     .wildlife-grid{grid-template-columns:1fr;}
@@ -644,7 +619,7 @@ section.camera-gallery{
 
 @media (max-width:768px){
 
-.carousel img{
+.carousel-frame{
     width:280px;
     height:185px;
 }
