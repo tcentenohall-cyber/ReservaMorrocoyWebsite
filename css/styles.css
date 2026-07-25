@@ -449,6 +449,39 @@
     display:block;
 }
 
+.map-frame{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg, var(--canopy) 0%, var(--canopy-deep) 100%);
+}
+
+.map-load-btn{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    padding:18px 28px;
+    border-radius:16px;
+    border:1px solid rgba(247,243,233,0.25);
+    background:rgba(247,243,233,0.08);
+    color:var(--sun-soft);
+    font-family:'Public Sans', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:background .18s ease, transform .18s ease;
+}
+
+.map-load-btn:hover{
+    background:rgba(247,243,233,0.16);
+    transform:translateY(-2px);
+}
+
+.map-load-icon{
+    font-size:28px;
+}
+
 /* Tablet */
 
 /* Phones */

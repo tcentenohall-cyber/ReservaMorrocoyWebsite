@@ -30,6 +30,21 @@ if (track && prevBtn) {
     });
 }
 
+/* ---------- Click-to-load map (defers heavy third-party embed) ---------- */
+const mapFrame = document.getElementById("mapFrame");
+const mapBtn = document.getElementById("mapLoadBtn");
+if (mapFrame && mapBtn) {
+    mapBtn.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.src = mapFrame.getAttribute("data-map-src");
+        iframe.title = mapFrame.getAttribute("data-map-title");
+        iframe.loading = "lazy";
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = "no-referrer-when-downgrade";
+        mapBtn.replaceWith(iframe);
+    }, { once: true });
+}
+
 /* ---------- Mobile nav toggle ---------- */
 const toggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');

@@ -51,6 +51,7 @@ const translations = {
     "land.h2": "One reserve, <em>fragmented</em>",
     "land.p": "The 406 hectares of Morrocoy aren't one unbroken block. The reserve is made up of two adjoining areas, Morrocoy 1 and Morrocoy 2, mapped and monitored across El Salado, El Carmen de Bolívar.",
     "land.map_tag": "Live map · Morrocoy 1 & 2",
+    "land.map_load_btn": "Load interactive map",
 
     /* ---------- Restoration ---------- */
     "restoration.eyebrow": "What restoration looks like",
@@ -181,6 +182,7 @@ const translations = {
     "land.h2": "Una reserva, <em>fragmentada</em>",
     "land.p": "Las 406 hectáreas de Morrocoy no forman un solo bloque continuo. La reserva está compuesta por dos áreas contiguas, Morrocoy 1 y Morrocoy 2, mapeadas y monitoreadas en El Salado, El Carmen de Bolívar.",
     "land.map_tag": "Mapa en vivo · Morrocoy 1 y 2",
+    "land.map_load_btn": "Cargar mapa interactivo",
 
     /* ---------- Restoration ---------- */
     "restoration.eyebrow": "Cómo se ve la restauración",
